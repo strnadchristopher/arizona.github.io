@@ -32,9 +32,9 @@
       </div>
     </div>
     <script>
-      // Get all the arguments passed to the page after the question mark
-      var args = window.location.search.substring(1).split('&');
-      alert(args)
+      // Get all the arguments passed to the page and print them to the console
+      var args = new URLSearchParams(window.location.search);
+      console.log(args);
 
 
       // Automatically redirect to "arizona://spotifyAuthSuccess"
