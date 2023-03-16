@@ -34,11 +34,11 @@
     <script>
       // Get all the arguments passed to the page and print them to the console
       var args = new URLSearchParams(window.location.search);
-      console.log(args);
+      // console.log(args);
 
 
       // Automatically redirect to "arizona://spotifyAuthSuccess"
-      window.location.href = "arizona://spotifyAuthSuccess";
+      window.location.href = "arizona://spotifyAuthSuccess/"+args.toString()+"";
   </script>
   </body>
 </html>
